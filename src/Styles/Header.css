@@ -1,0 +1,58 @@
+.header {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8) 15%,
+    rgba(0,0,0,0) 60%
+  );
+}
+
+.header-content {
+  position: absolute;
+  bottom: 3rem;    
+  left: 3rem;        
+  max-width: 550px;  
+  z-index: 2;
+}
+
+.movie-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 .8rem -18.2rem;
+}
+
+.movie-desc {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 45vh;
+  }
+
+  .header-content {
+    bottom: 1rem;
+    left: 1rem;
+    max-width: 90%;
+  }
+
+  .movie-title {
+    font-size: 2rem;
+  }
+
+  .movie-desc {
+    font-size: .9rem;
+  }
+}
