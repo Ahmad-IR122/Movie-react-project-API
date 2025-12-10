@@ -12,28 +12,15 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-
       <div className="d-flex justify-content-start p-3 m-3">
         <h1>Popular Movies</h1>
       </div>
-
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-            <Card image={movieOne} />
-          </div>
-
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-            <Card image={movieTwo} />
-          </div>
-
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-            <Card image={movieThree} />
-          </div>
-
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-            <Card image={movieFour} />
-          </div>
+          <Card image={movieOne} />
+          <Card image={movieTwo} />
+          <Card image={movieThree} />
+          <Card image={movieFour} />
         </div>
       </div>
     </div>
