@@ -49,7 +49,7 @@ function App() {
 
       <div className="d-flex justify-content-center p-4">
         <button className="btn btn-success " onClick={handleLoadMore}>
-          Load More
+          <i className="bi bi-cloud-upload-fill"></i> Load More
         </button>
       </div>
 
