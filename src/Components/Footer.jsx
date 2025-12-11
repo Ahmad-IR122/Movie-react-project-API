@@ -27,10 +27,10 @@ const Footer = () => {
           <p className="small mb-0">
           © {new Date().getFullYear()} Movie Explorer | Created by Ahmad Irshaid
         </p>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-discord"></i>
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-twitter-x"></i>
+        <i className="bi bi-github"></i>
+        <i className="bi bi-discord"></i>
+        <i className="bi bi-facebook"></i>
+        <i className="bi bi-twitter-x"></i>
         </div>
         
       </div>
