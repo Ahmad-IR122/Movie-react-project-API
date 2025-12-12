@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer text-center py-4 mt-5">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center gap-2">
-          <i class="bi bi-camera-reels"></i>
+          <i className="bi bi-camera-reels"></i>
 
           <h5 className="fw-bold">Movie Explorer App</h5>
         </div>

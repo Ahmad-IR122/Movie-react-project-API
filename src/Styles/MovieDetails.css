@@ -1,0 +1,22 @@
+.details-hero {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.details-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.7),
+    rgba(180, 0, 0, 0.85)
+  );
+  z-index: 1;
+}
+
+.details-hero .container {
+  z-index: 2;
+}
