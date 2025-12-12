@@ -7,15 +7,26 @@ import Footer from "./Components/Footer";
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [page, setPage] = useState(1);
 
   const API_KEY = process.env.REACT_APP_API_KEY;
-  const URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
 
   useEffect(() => {
+    const URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=${page}`;
     fetch(URL)
       .then((res) => res.json())
-      .then((data) => setMovies(data.results || []));
-  }, []);
+      .then((data) => {
+        if (page === 1) {
+          setMovies(data.results || []);
+        } else {
+          setMovies((prevMovies) => [...prevMovies, ...(data.results || [])]);
+        }
+      });
+  }, [page]);
+
+  const handleLoadMore = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
 
   return (
     <div className="App">
@@ -33,10 +44,16 @@ function App() {
               key={movie.id}
             />
           ))}
-
         </div>
       </div>
-      <Footer/>
+
+      <div className="d-flex justify-content-center p-4">
+        <button className="btn btn-success " onClick={handleLoadMore}>
+          <i className="bi bi-cloud-upload-fill"></i> Load More
+        </button>
+      </div>
+
+      <Footer />
     </div>
   );
 }
