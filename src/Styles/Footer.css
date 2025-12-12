@@ -1,0 +1,13 @@
+.footer {
+  background-color: #111827; 
+  color: #e5e7eb;           
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer p, 
+.footer h5 {
+  margin: 0.5rem 0;
+}

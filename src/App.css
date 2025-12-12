@@ -1,3 +1,8 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .App {
   text-align: center;
 }
