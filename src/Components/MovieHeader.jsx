@@ -1,15 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from "react";
+import { Link } from "react-router";
 import "../Styles/MovieHeader.css";
-const MovieHeader = ({movieTitle}) => {
+
+const MovieHeader = ({ movieTitle }) => {
   return (
-    <div className="movie-header d-flex align-items-start text-white gap-2 m-0 p-2" >
-      <Link to={"/"}  className="nav-link ">
-      <h3>Back</h3></Link>
-      <h3> /</h3>
-      <h3>{movieTitle}</h3>
+    <div className="movie-header">
+      <div className="container d-flex align-items-center gap-2">
+        <hr />
+        <Link to="/" className="nav-link ">
+          Back
+        </Link>
+        <span className="separator">/</span>
+        <h3 className="movie-title m-0">{movieTitle}</h3>
+      </div>
     </div>
   );
-}
+};
 
 export default MovieHeader;
