@@ -1,97 +1,39 @@
-/* ===== Wrapper (center + fixed) ===== */
 .search-wrapper {
   position: fixed;
-  top: 30px;
+  top: 18px;                     /* أقرب للـ navbar */
   left: 50%;
   transform: translateX(-50%);
-  width: 420px;
-  z-index: 10000;
+  width: 360px;                  /* أصغر وأنعم */
+  z-index: 2000;                 /* فوق الهيرو */
 }
 
-/* ===== Search Form ===== */
-.navbar-search {
-  display: flex;
-  align-items: center;
-  background: #1f1f1f;
-  border-radius: 999px;
-  padding: 6px 10px;
-}
-
-/* input */
-.navbar-search input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 8px 12px;
-  font-size: 14px;
-}
-
-/* placeholder */
-.navbar-search input::placeholder {
-  color: #aaa;
-}
-
-/* button */
-.navbar-search button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 6px 10px;
-  font-size: 16px;
-}
-
-/* hover */
-.navbar-search button:hover {
-  color: #e50914; /* أحمر خفيف */
-}
-
-/* ===== Dropdown (Google-like) ===== */
-.search-dropdown {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-  width: 100%;
-  background: #ffffff;
-  border-radius: 14px;
-  max-height: 320px;
-  overflow-y: auto;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* each item */
-.search-item {
-  padding: 12px 14px;
-  cursor: pointer;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-/* hover item */
-.search-item:hover {
-  background: #f5f5f5;
-}
-
-/* title */
-.search-title {
-  font-size: 14px;
-  color: #111;
-}
-
-/* ===== Scrollbar (optional) ===== */
-.search-dropdown::-webkit-scrollbar {
-  width: 6px;
-}
-
-.search-dropdown::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 576px) {
-  .search-wrapper {
-    width: 90%;
+  .search-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    z-index: 9999;
+    max-height: 320px;
+    overflow-y: auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   }
-}
+
+  /* item */
+  .search-item {
+    padding: 12px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .search-item:hover {
+    background: #f5f5f5;
+  }
+
+  .search-title {
+    display: block;
+    font-size: 14px;
+    color: #111;
+  }

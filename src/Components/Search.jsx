@@ -42,7 +42,6 @@ const Search = () => {
     }
   }
 
-  // ✅ Close dropdown when click outside
   useEffect(() => {
     function handleClickOutside(e) {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
@@ -53,7 +52,6 @@ const Search = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // ✅ When user clicks item
   const handleSelectMovie = (movie) => {
     setInput(movie.title);
     setShowList(false);
@@ -61,7 +59,8 @@ const Search = () => {
 
   return (
     <div ref={wrapperRef} className="search-wrapper">
-      <form className="navbar-search" onSubmit={handleFormSubmit}>
+      <form className="navbar-search d-flex align-items-center " onSubmit={handleFormSubmit} style={{padding : "4px 10px"}}
+      >
         <input
           id="valRes"
           type="text"
@@ -76,8 +75,7 @@ const Search = () => {
         </button>
       </form>
 
-      {/* ✅ Dropdown list like Google */}
-      {showList && input.trim() && results.length > 0 && (
+      {showList && results.length > 0 && (
         <SearchResultList results={results} onSelect={handleSelectMovie} />
       )}
     </div>
