@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import SearchResultList from "./SearchResultList";
 
-
 const Search = () => {
   const [input, setInput] = useState("");
   const [results, setResults] = useState([]);
@@ -9,20 +8,21 @@ const Search = () => {
 
   const api_key = process.env.REACT_APP_API_KEY;
   const wrapperRef = useRef(null);
-
   function fetchSearch(value) {
-    const searchValue = encodeURIComponent(value.trim());
-    if (!searchValue) {
-      setResults([]);
-      return;
-    }
-
-    const URL = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${searchValue}&page=1`;
-    fetch(URL)
-      .then((res) => res.json())
-      .then((data) => {
-        setResults(data.results || []);
-      });
+    setTimeout(() => {
+      const searchValue = encodeURIComponent(value.trim());
+      if (!searchValue) {
+        setResults([]);
+        return;
+      }
+      const URL = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${searchValue}&page=1`;
+      fetch(URL)
+        .then((res) => res.json())
+        .then((data) => {
+          setResults(data.results);
+          console.log(data.results);
+        });
+    }, 500);
   }
 
   function handleFormSubmit(e) {
@@ -32,8 +32,7 @@ const Search = () => {
   function handleSubmitQuery(e) {
     const value = e.target.value;
     setInput(value);
-
-    if (value.trim()) {
+    if (value) {
       setShowList(true);
       fetchSearch(value);
     } else {
@@ -52,14 +51,12 @@ const Search = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleSelectMovie = (movie) => {
-    setInput(movie.title);
-    setShowList(false);
-  };
-
   return (
     <div ref={wrapperRef} className="search-wrapper">
-      <form className="navbar-search d-flex align-items-center " onSubmit={handleFormSubmit} style={{padding : "4px 10px"}}
+      <form
+        className="navbar-search d-flex align-items-center "
+        onSubmit={handleFormSubmit}
+        style={{ padding: "4px 10px" }}
       >
         <input
           id="valRes"
@@ -67,17 +64,13 @@ const Search = () => {
           placeholder="Search movies..."
           value={input}
           onChange={handleSubmitQuery}
-          onFocus={() => input.trim() && setShowList(true)}
           autoComplete="off"
         />
         <button type="submit">
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-
-      {showList && results.length > 0 && (
-        <SearchResultList results={results} onSelect={handleSelectMovie} />
-      )}
+      {showList && results.length > 0 && <SearchResultList results={results} />}
     </div>
   );
 };
