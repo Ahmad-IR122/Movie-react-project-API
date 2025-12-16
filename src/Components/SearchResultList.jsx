@@ -6,7 +6,7 @@ const SearchResultList = ({ results, onSelect }) => {
     <div className="search-dropdown">
       {results.map((movie) => (
         <div key={movie.id} className="search-item">
-          <Link to={`/movie/${movie.id}`} >
+          <Link to={`/movie/${movie.id}`}  >
             {movie.title}
           </Link>
         </div>

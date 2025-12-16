@@ -37,3 +37,9 @@
     font-size: 14px;
     color: #111;
   }
+
+  @media (min-width: 768px) {
+  .search-dropdown {
+    width: 71% !important;
+  }
+}
