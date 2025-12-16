@@ -54,9 +54,9 @@ const Search = () => {
   return (
     <div ref={wrapperRef} className="search-wrapper">
       <form
-        className="navbar-search d-flex align-items-center "
+        className="navbar-search d-lg-flex d-md-none"
         onSubmit={handleFormSubmit}
-        style={{ padding: "4px 10px" }}
+          style={{ padding: "4px 10px" }}
       >
         <input
           id="valRes"

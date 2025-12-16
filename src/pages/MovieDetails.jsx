@@ -12,7 +12,7 @@ const MovieDetails = () => {
   const API_KEY = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
-    debugger
+    
     const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`;
     fetch(URL)
       .then((res) => res.json())
