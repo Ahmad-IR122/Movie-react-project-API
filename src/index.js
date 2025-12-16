@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NowPlaying from './pages/NowPlaying';
 import Upcoming from './pages/Upcoming';
 import MovieDetails from './pages/MovieDetails';

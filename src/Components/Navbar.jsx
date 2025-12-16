@@ -1,5 +1,5 @@
 
-import { Link, NavLink } from "react-router";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Images/movieLogo.png";
 import "../Styles/Navbar.css";
 import Search from "./Search";

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Upcoming = () => {
   const [movies, setMovies] = useState([]);
