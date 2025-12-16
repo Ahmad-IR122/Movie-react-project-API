@@ -1,10 +1,10 @@
 .search-wrapper {
   position: fixed;
-  top: 18px;                     /* أقرب للـ navbar */
+  top: 18px;                     
   left: 50%;
   transform: translateX(-50%);
-  width: 360px;                  /* أصغر وأنعم */
-  z-index: 2000;                 /* فوق الهيرو */
+  width: 360px;                  
+  z-index: 2000;                
 }
 
   .search-dropdown {
@@ -21,7 +21,7 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   }
 
-  /* item */
+
   .search-item {
     padding: 12px 14px;
     cursor: pointer;
