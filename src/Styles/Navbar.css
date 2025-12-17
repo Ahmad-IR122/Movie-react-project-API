@@ -90,5 +90,11 @@
 @media (max-width: 768px) {
   .navbar-search {
     display: none;
+
+  }
+}
+@media(max-width: 900px) {
+  .navbar-search {
+    max-width: 300px !important; 
   }
 }
