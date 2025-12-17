@@ -8,24 +8,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchMovies,incrementPage } from "./features/movie/movieSlice";
 
 function App() {
-  // const [movies, setMovies] = useState([]);
-  // const [page, setPage] = useState(1);
-  // const API_KEY = process.env.REACT_APP_API_KEY;
-  // useEffect(() => {
-  //   const URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=${page}`;
-  //   fetch(URL)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       if (data?.results?.length > 0) {
-  //         setMovies((prevMovies) => [...prevMovies, ...(data.results || [])]);
-  //       }
-  //     });
-  // }, [page]);
-  // const handleLoadMore = () => {
-  //   setPage((prevPage) => prevPage + 1);
-  // };
-
-
   const dispatch = useDispatch();
   const {movies , loading, page} = useSelector((state) => state.movies);
   useEffect(()=> {
