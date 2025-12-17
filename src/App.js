@@ -2,21 +2,23 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Card from "./Components/Card";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Footer from "./Components/Footer";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchMovies,incrementPage } from "./features/movie/movieSlice";
+import { fetchMovies, incrementPage } from "./features/movie/movieSlice";
 
 function App() {
   const dispatch = useDispatch();
-  const {movies , loading, page} = useSelector((state) => state.movies);
-  useEffect(()=> {
-    dispatch(fetchMovies(page));
-  }, [dispatch , page]);
+  const { movies, loading, page } = useSelector((state) => state.movies);
+  useEffect(() => {
+    if (movies.length <= 0 || page + 1 > page) {
+      dispatch(fetchMovies(page));
+    }
+  }, [page]);
 
   const handleLoadMore = () => {
     dispatch(incrementPage());
-  }
+  };
   return (
     <div className="App">
       <Navbar />
@@ -27,15 +29,14 @@ function App() {
       <div className="container">
         <div className="row g-4">
           {movies.map((movie) => (
-            <Card
-              movie={movie}
-            />
+            <Card movie={movie} />
           ))}
         </div>
       </div>
       <div className="d-flex justify-content-center p-4">
         <button className="btn btn-primary w-25 h-25" onClick={handleLoadMore}>
-          <i className="bi bi-cloud-upload-fill"></i> {loading ? "Loading..." : "Load More"}
+          <i className="bi bi-cloud-upload-fill"></i>{" "}
+          {loading ? "Loading..." : "Load More"}
         </button>
       </div>
       <Footer />
