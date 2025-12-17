@@ -1,32 +1,31 @@
 # Movie-react-project-API
-
 # 🎬 Movies App
 
-A modern **Movies Web Application** built with **React.js** that allows users to explore movies using **TMDB API**. The app provides features like browsing popular, now playing, and upcoming movies, searching for movies, and viewing detailed movie information.
+A modern **Movies Web Application** built with **React.js** as part of my **Front-End Internship at ITG**. The application allows users to explore movies using the **TMDB API**, including popular, now playing, and upcoming movies, with search functionality and detailed movie pages.
 
 ---
 
 ## 🚀 Features
 
-* Browse **Popular Movies**
-* View **Now Playing** movies
+* Browse **Popular Movies** (most trending movies on TMDB)
+* View **Now Playing** movies in theaters
 * Explore **Upcoming** movies
-* 🔍 **Search** for movies with live results
-* 🎞️ Movie **Details Page** (poster, overview, rating, etc.)
+* 🔍 **Search Movies** with live results
+* 🎞️ **Movie Details Page** (poster, overview, rating)
 * ⚡ **Redux Toolkit** for global state management
-* Centralized movie data fetching using async thunks
-* Responsive design (works on desktop & mobile)
-* Clean and modern UI
+* Centralized API handling using `createAsyncThunk`
+* Fully responsive UI (desktop & mobile)
+* Clean and modern design
 
 ---
 
 ## 🛠️ Technologies Used
 
 * **React.js**
-* **React Router DOM** (for navigation)
+* **React Router DOM** (routing & navigation)
 * **Redux Toolkit** (state management)
 * **React Redux**
-* **TMDB API** (movie data)
+* **TMDB API** (movies data source)
 * **Bootstrap** (layout & responsiveness)
 * **CSS** (custom styling)
 
@@ -61,8 +60,6 @@ src/
 │── index.js
 ```
 
-````
-
 ---
 
 ## 🔑 Environment Variables
@@ -70,36 +67,33 @@ src/
 Create a `.env` file in the root directory and add your TMDB API key:
 
 ```env
-REACT_APP_API_KEY=58fb8d1df7ee00b190f579117698b6af
-````
-
-> ⚠️ Make sure **NOT** to push your API key to GitHub.
-
+REACT_APP_API_KEY=your_tmdb_api_key_here
+```
 ---
 
 ## 🧠 Redux Implementation
 
-This project uses **Redux Toolkit** to manage global state such as movies list, loading states, errors, and pagination.
+The project uses **Redux Toolkit** to manage global application state and handle API calls efficiently.
 
 ### Redux Flow
 
-* `movieSlice.js` handles the state (movies, status, error)
-* Async API calls are managed using `createAsyncThunk`
+* `movieSlice.js` manages movies data, loading state, and errors
+* API requests are handled using `createAsyncThunk`
 * Redux store is configured in `store.js`
-* The app is wrapped with `<Provider>` in `index.js`
+* The application is wrapped with `<Provider>` in `index.js`
 
 ### Example State Shape
 
 ```js
 {
   movies: [],
-  status: 'idle | loading | succeeded | failed',
+  loading: false,
   error: null,
   page: 1
 }
 ```
 
-Redux helps keep the app scalable and avoids prop drilling.
+This approach improves scalability and avoids prop drilling.
 
 ---
 
@@ -124,7 +118,7 @@ npm install
 npm start
 ```
 
-The app will run on:
+The app will run at:
 
 ```
 http://localhost:3000
@@ -134,37 +128,35 @@ http://localhost:3000
 
 ## 🌐 API Reference
 
-* **TMDB Base URL:**
+* **TMDB Base URL**
 
-  ```
-  https://api.themoviedb.org/3
-  ```
+```
+https://api.themoviedb.org/3
+```
 
-* **Popular Movies**
+* **Popular Movies** (used to display trending movies)
 
-  ```
-  /movie/popular
-  ```
+```
+/movie/popular
+```
 
-* **Now Playing**
+* **Now Playing Movies**
 
-  ```
-  /movie/now_playing
-  ```
+```
+/movie/now_playing
+```
 
-* **Upcoming**
+* **Upcoming Movies**
 
-  ```
-  /movie/upcoming
-  ```
+```
+/movie/upcoming
+```
 
 * **Search Movies**
 
-  ```
-  /search/movie
-  ```
-
-##
+```
+/search/movie
+```
 
 ---
 
@@ -173,7 +165,7 @@ http://localhost:3000
 * Add pagination or infinite scrolling
 * Add movie trailers
 * Add favorites / watchlist
-* Improve animations & UI transitions
+* Improve animations and UI transitions
 
 ---
 
@@ -185,8 +177,7 @@ Developed by **Ahmad Irshaid**
 
 ## 📄 License
 
-This project was developed as part of my **Front-End internship @ ITG** and uses the free TMDB API.
+This project was developed as part of a **Front-End Internship at ITG** and uses the free **TMDB API**.
 
----
 
-✨ Feel free to fork the project and improve it!
+
