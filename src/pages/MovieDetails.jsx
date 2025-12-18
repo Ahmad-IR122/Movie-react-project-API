@@ -73,7 +73,7 @@ const MovieDetails = () => {
       <div className="my-5">
         <h1 className="mb-3 text-center">Actors</h1>
         <div className="container my-5 d-flex justify-content-center align-items-center">
-          <div className="row g-4 ">
+          <div className="actors-section row g-4 ">
             <div className="col-12 col-md-6">
               <Actors />
             </div>
