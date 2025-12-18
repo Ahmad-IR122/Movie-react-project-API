@@ -193,5 +193,14 @@ Developed by **Ahmad Irshaid**
 This project was developed as part of a **Front-End Internship at ITG** and uses the free **TMDB API**.
 
 ---
+### <span aria-hidden="true">✅</span> Deploy Preview for *fantastic-gaufre-b957eb* ready!
 
+
+|  Name | Link |
+|:-:|------------------------|
+|<span aria-hidden="true">🔨</span> Latest commit | 6d35376553c49bdc75af16267324b1930770dac0 |
+|<span aria-hidden="true">🔍</span> Latest deploy log | https://app.netlify.com/projects/fantastic-gaufre-b957eb/deploys/6943e373d67920000816c70e |
+|<span aria-hidden="true">😎</span> Deploy Preview | [https://deploy-preview-9--fantastic-gaufre-b957eb.netlify.app](https://deploy-preview-9--fantastic-gaufre-b957eb.netlify.app) |
+|<span aria-hidden="true">📱</span> Preview on mobile | <details><summary> Toggle QR Code... </summary><br /><br />![QR Code](https://app.netlify.com/qr-code/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RlcGxveS1wcmV2aWV3LTktLWZhbnRhc3RpYy1nYXVmcmUtYjk1N2ViLm5ldGxpZnkuYXBwIn0.s6ap8Jj7H2wQ8_y0hEqOw6-3F4vkMPJZa0-9owTegY8)<br /><br />_Use your smartphone camera to open QR code link._</details> |
+---
 ✨ Feel free to fork the project and improve it!
