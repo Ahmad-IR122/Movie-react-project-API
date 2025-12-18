@@ -14,7 +14,7 @@ const Upcoming = () => {
         setMovies(data.results);
         console.log(data.results);
       });
-    },[api_key]);
+    },[]);
   return (
     <div>
       <Navbar/>
