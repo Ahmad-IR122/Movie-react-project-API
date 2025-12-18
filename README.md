@@ -1,4 +1,3 @@
-# Movie-react-project-API
 # 🎬 Movies App
 
 A modern **Movies Web Application** built with **React.js** as part of my **Front-End Internship at ITG**. The application allows users to explore movies using the **TMDB API**, including popular, now playing, and upcoming movies, with search functionality and detailed movie pages.
@@ -64,11 +63,25 @@ src/
 
 ## 🔑 Environment Variables
 
+### How to Get a TMDB API Key
+
+1. Go to the official TMDB website: [https://www.themoviedb.org/](https://www.themoviedb.org/)
+2. Create an account or log in.
+3. Navigate to **Settings → API** from your profile menu.
+4. Click **Create** or **Request an API Key**.
+5. Choose **Developer** and fill in the required information.
+6. After approval, copy your **API Key (v3 auth)**.
+
+### Using the API Key
+
 Create a `.env` file in the root directory and add your TMDB API key:
 
 ```env
 REACT_APP_API_KEY=your_tmdb_api_key_here
 ```
+
+> ⚠️ Do not push your API key to GitHub.
+
 ---
 
 ## 🧠 Redux Implementation
@@ -87,7 +100,7 @@ The project uses **Redux Toolkit** to manage global application state and handle
 ```js
 {
   movies: [],
-  loading: false,
+  status: 'idle | loading | succeeded | failed',
   error: null,
   page: 1
 }
@@ -179,5 +192,6 @@ Developed by **Ahmad Irshaid**
 
 This project was developed as part of a **Front-End Internship at ITG** and uses the free **TMDB API**.
 
+---
 
-
+✨ Feel free to fork the project and improve it!
