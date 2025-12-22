@@ -198,9 +198,12 @@ This project was developed as part of a **Front-End Internship at ITG** and uses
 
 |  Name | Link |
 |:-:|------------------------|
-|<span aria-hidden="true">🔨</span> Latest commit | 6d35376553c49bdc75af16267324b1930770dac0 |
-|<span aria-hidden="true">🔍</span> Latest deploy log | https://app.netlify.com/projects/fantastic-gaufre-b957eb/deploys/6943e373d67920000816c70e |
-|<span aria-hidden="true">😎</span> Deploy Preview | [https://deploy-preview-9--fantastic-gaufre-b957eb.netlify.app](https://deploy-preview-9--fantastic-gaufre-b957eb.netlify.app) |
-|<span aria-hidden="true">📱</span> Preview on mobile | <details><summary> Toggle QR Code... </summary><br /><br />![QR Code](https://app.netlify.com/qr-code/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RlcGxveS1wcmV2aWV3LTktLWZhbnRhc3RpYy1nYXVmcmUtYjk1N2ViLm5ldGxpZnkuYXBwIn0.s6ap8Jj7H2wQ8_y0hEqOw6-3F4vkMPJZa0-9owTegY8)<br /><br />_Use your smartphone camera to open QR code link._</details> |
+|<span aria-hidden="true">🔨</span> Latest commit | 77e48a54d9ac7fe15b64df8063b6b1a37502289d |
+|<span aria-hidden="true">🔍</span> Latest deploy log | https://app.netlify.com/projects/fantastic-gaufre-b957eb/deploys/6949451d0e85180008f8f4ad |
+|<span aria-hidden="true">😎</span> Deploy Preview | [https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app](https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app) |
+|<span aria-hidden="true">📱</span> Preview on mobile | <details><summary> Toggle QR Code... </summary><br /><br />![QR Code](https://app.netlify.com/qr-code/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RlcGxveS1wcmV2aWV3LTEwLS1mYW50YXN0aWMtZ2F1ZnJlLWI5NTdlYi5uZXRsaWZ5LmFwcCJ9.Rg9VDnnjQ3vDS9rG_bXe3IyplKMgGlUbQtfL1J8sIfU)<br /><br />_Use your smartphone camera to open QR code link._</details> |
+---
+<!-- [fantastic-gaufre-b957eb Preview](https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app) -->
+_To edit notification comments on pull requests, go to your [Netlify project configuration](https://app.netlify.com/projects/fantastic-gaufre-b957eb/configuration/notifications#deploy-notifications)._
 ---
 ✨ Feel free to fork the project and improve it!
