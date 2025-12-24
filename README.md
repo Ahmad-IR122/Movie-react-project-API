@@ -220,7 +220,4 @@ This project was developed as part of a **Front-End Internship at ITG** and uses
 |<span aria-hidden="true">😎</span> Deploy Preview | [https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app](https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app) |
 |<span aria-hidden="true">📱</span> Preview on mobile | <details><summary> Toggle QR Code... </summary><br /><br />![QR Code](https://app.netlify.com/qr-code/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RlcGxveS1wcmV2aWV3LTEwLS1mYW50YXN0aWMtZ2F1ZnJlLWI5NTdlYi5uZXRsaWZ5LmFwcCJ9.Rg9VDnnjQ3vDS9rG_bXe3IyplKMgGlUbQtfL1J8sIfU)<br /><br />_Use your smartphone camera to open QR code link._</details> |
 ---
-<!-- [fantastic-gaufre-b957eb Preview](https://deploy-preview-10--fantastic-gaufre-b957eb.netlify.app) -->
-_To edit notification comments on pull requests, go to your [Netlify project configuration](https://app.netlify.com/projects/fantastic-gaufre-b957eb/configuration/notifications#deploy-notifications)._
----
 ✨ Feel free to fork the project and improve it!
