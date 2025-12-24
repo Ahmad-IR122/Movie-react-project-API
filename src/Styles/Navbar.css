@@ -110,7 +110,7 @@
 }
 @media (max-width: 554px) {
   .navbar-search {
-        width: 70%;
+    width: 70%;
     padding: 5px 10px;
     margin-left: 135px;
     margin-top: 57px;
@@ -118,7 +118,7 @@
 }
 @media (max-width: 535px) {
   .navbar-search {
-      display: none;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
