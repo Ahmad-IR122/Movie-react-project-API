@@ -34,29 +34,46 @@ A modern **Movies Web Application** built with **React.js** as part of my **Fron
 
 ```
 src/
-│── Components/
-│   ├── Navbar.jsx
-│   ├── Header.jsx
+│
+├── app/
+|   └── store.jsx
+│
+├── Components/
+│   ├── Actors.jsx
 │   ├── Card.jsx
-│   ├── Search.jsx
 │   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── MovieHeader.jsx
+│   ├── Navbar.jsx
+│   ├── Search.jsx
+│   └── SearchResultList.jsx
 │
-│── Pages/
-│   ├── Home.jsx
-│   ├── NowPlaying.jsx
-│   ├── Upcoming.jsx
-│   ├── MovieDetails.jsx
-│
-│── store/
-│   └── store.js
-│
-│── features/
+├── features/
 │   └── movie/
-│       ├── movieSlice.js
-│       └── movieThunk.js
+│       └── movieSlice.jsx
 │
-│── App.jsx
-│── index.js
+├── Images/
+│   ├── Actors.png
+│   ├── Header-back-ground-img.png
+│   └── movieLogo.png
+│
+├── pages/
+│   ├── MovieDetails.jsx
+│   ├── NowPlaying.jsx
+│   └── Upcoming.jsx
+│
+├── Styles/
+│   ├── Actors.css
+│   ├── Footer.css
+│   ├── Header.css
+│   ├── MovieDetails.css
+│   ├── MovieHeader.css
+│   ├── Navbar.css
+│   └── SearchResultList.css
+│
+├── App.jsx
+└── index.js
+
 ```
 
 ---
