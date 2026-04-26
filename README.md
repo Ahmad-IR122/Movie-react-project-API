@@ -81,30 +81,46 @@ http://localhost:3000
 ## 📁 Project Structure
 
 ```text
-src/
-├── app/
-│   └── store.jsx
-├── Components/
-│   ├── Actors.jsx
-│   ├── Card.jsx
-│   ├── Footer.jsx
-│   ├── Header.jsx
-│   ├── MovieHeader.jsx
-│   ├── Navbar.jsx
-│   ├── Search.jsx
-│   └── SearchResultList.jsx
-├── features/
-│   └── movie/
-│       └── movieSlice.jsx
-├── Images/
-├── pages/
-│   ├── MovieDetails.jsx
-│   ├── NowPlaying.jsx
-│   └── Upcoming.jsx
-├── Styles/
-├── App.css
-├── App.js
-└── index.js
+Movie-react-project-API/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── app/
+│   │   └── store.jsx
+│   ├── Components/
+│   │   ├── Actors.jsx
+│   │   ├── Card.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── MovieHeader.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Search.jsx
+│   │   └── SearchResultList.jsx
+│   ├── features/
+│   │   └── movie/
+│   │       └── movieSlice.jsx
+│   ├── Images/
+│   ├── pages/
+│   │   ├── MovieDetails.jsx
+│   │   ├── NowPlaying.jsx
+│   │   └── Upcoming.jsx
+│   ├── Styles/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 ```
 
 ## 👨‍💻 Author
