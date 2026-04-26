@@ -1,4 +1,4 @@
-# 🎬 Movie React Project API
+# 🎬 Movie React Application
 
 A React movie browsing application powered by the **TMDB API**.  
 It includes popular movies with pagination, now-playing and upcoming views, search, and movie details pages.
